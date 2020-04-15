@@ -1,9 +1,12 @@
 package com.bridgelabz.quantitymeasurement.service;
 
 import com.bridgelabz.quantitymeasurement.enumarator.QuantityType;
+import com.bridgelabz.quantitymeasurement.enumarator.Unit;
 
 import java.util.List;
 
 public interface IQuantityMeasurementService {
-     List<QuantityType> type();
-    }
+    List<QuantityType> quantityType();
+
+    List<Unit> unitType(QuantityType type);
+}
